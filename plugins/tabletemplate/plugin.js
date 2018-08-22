@@ -1,12 +1,11 @@
-﻿CKEDITOR.plugins.add( 'tabletemplate', {
-    icons:"tabletemplate",
-    init: function( editor ) {
+﻿CKEDITOR.plugins.add('tabletemplate', {
+    icons: "tabletemplate",
+    init: function (editor) {
 
-        editor.addCommand( 'insertTableTemplate', {
-            exec: function( editor ) {
+        editor.addCommand('insertTableTemplate', {
+            exec: function (editor) {
                 var now = new Date();
-                editor.insertHtml( '<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:540px">\n' +
-                    '    <caption>Минск-Рига-Стокгольм-Рованиеми-Хельсинки-Таллинн</caption>\n' +
+                editor.insertHtml('<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:540px">\n' +
                     '    <thead>\n' +
                     '        <tr>\n' +
                     '            <th scope="col" style="width:35px">день</th>\n' +
@@ -132,11 +131,11 @@
                     '        </tr>\n' +
                     '    </tbody>\n' +
                     '</table>\n' +
-                    '<p>&nbsp;</p>\n' );
+                    '<p>&nbsp;</p>\n');
             }
         });
 
-        editor.ui.addButton( 'tableTemplate', {
+        editor.ui.addButton('tableTemplate', {
             label: 'Шаблон расписания',
             command: 'insertTableTemplate',
             toolbar: 'insert'
