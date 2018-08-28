@@ -5,133 +5,122 @@
         editor.addCommand('insertTableTemplate', {
             exec: function (editor) {
                 var now = new Date();
-                editor.insertHtml('<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:540px">\n' +
-                    '    <thead>\n' +
-                    '        <tr>\n' +
-                    '            <th scope="col" style="width:35px">день</th>\n' +
-                    '            <th scope="col" style="width:45px">время*</th>\n' +
-                    '            <th scope="col" style="width:330px">мероприятие</th>\n' +
-                    '            <th scope="col">примечание</th>\n' +
-                    '        </tr>\n' +
-                    '    </thead>\n' +
-                    '    <tbody>\n' +
-                    '        <tr>\n' +
-                    '            <td style="width:12px">&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '        </tr>\n' +
-                    '        <tr>\n' +
-                    '            <td style="width:12px">&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '        </tr>\n' +
-                    '        <tr>\n' +
-                    '            <td style="width:12px">&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '        </tr>\n' +
-                    '        <tr>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '        </tr>\n' +
-                    '        <tr>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '        </tr>\n' +
-                    '        <tr>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '        </tr>\n' +
-                    '        <tr>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '        </tr>\n' +
-                    '        <tr>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '        </tr>\n' +
-                    '        <tr>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '        </tr>\n' +
-                    '        <tr>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '        </tr>\n' +
-                    '        <tr>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '        </tr>\n' +
-                    '        <tr>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '        </tr>\n' +
-                    '        <tr>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '        </tr>\n' +
-                    '        <tr>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '        </tr>\n' +
-                    '        <tr>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '        </tr>\n' +
-                    '        <tr>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '        </tr>\n' +
-                    '        <tr>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '        </tr>\n' +
-                    '        <tr>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '        </tr>\n' +
-                    '        <tr>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '            <td>&nbsp;</td>\n' +
-                    '        </tr>\n' +
-                    '    </tbody>\n' +
-                    '</table>\n' +
-                    '<p>&nbsp;</p>\n');
+                editor.insertHtml('<table>' +
+                    '<tr>' +
+                    '<td><strong>1 день</strong></td>' +
+                    '<td><strong></strong></td>' +
+                    '<td><strong>2 день</strong></td>' +
+                    '<td><strong></strong></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>4:00</td>' +
+                    '<td>площадь калинина, отправление в ригу</td>' +
+                    '<td>7:00</td>' +
+                    '<td>завтрак на корабле <em>(доп. оплата)</em></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>8:00</td>' +
+                    '<td>пересечение границы (беларусь-литва)</td>' +
+                    '<td>10:30</td>' +
+                    '<td>прибытие в стокгольм</td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>13:00</td>' +
+                    '<td>прибытие в ригу, экскурсия по городу</td>' +
+                    '<td>11:00</td>' +
+                    '<td>обзорная экскурсия по стокгольму</td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>16:00</td>' +
+                    '<td>выезд в порт, погрузка на корабль</td>' +
+                    '<td>14:00</td>' +
+                    '<td>преезд на дюргордн — остров музеев</td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>17:30</td>' +
+                    '<td>отправление в стокгольм</td>' +
+                    '<td>17:30</td>' +
+                    '<td>выезд в порт, погрузка на корабль</td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>17:30</td>' +
+                    '<td>ужин на корабле <em>(доп. оплата)</em>.</td>' +
+                    '<td>19:30</td>' +
+                    '<td>отправление в турку</td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td></td>' +
+                    '<td></td>' +
+                    '<td>19:00</td>' +
+                    '<td>ужин на корабле <em>(доп. оплата)</em>.</td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td><strong>3 день</strong></td>' +
+                    '<td><strong></strong></td>' +
+                    '<td><strong>4 день</strong></td>' +
+                    '<td><strong></strong></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>6:00</td>' +
+                    '<td>завтрак на корабле <em>(доп. оплата)</em></td>' +
+                    '<td>7:00</td>' +
+                    '<td>завтрак на корабле <em>(доп. оплата)</em>.</td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>7:00</td>' +
+                    '<td>прибытие в турку</td>' +
+                    '<td>8:00</td>' +
+                    '<td>обзорная экскурсия по городу</td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>7:30</td>' +
+                    '<td>экскурсия по городу</td>' +
+                    '<td>11:30</td>' +
+                    '<td>отправление в минск</td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>9:00</td>' +
+                    '<td>переезд в хельсинки</td>' +
+                    '<td></td>' +
+                    '<td></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>11:00</td>' +
+                    '<td>экскурсия по городу</td>' +
+                    '<td></td>' +
+                    '<td></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>13:00</td>' +
+                    '<td>свободное время (посещение парков, музеев <em>(доп. оплата)</em>)</td>' +
+                    '<td></td>' +
+                    '<td></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>17:30</td>' +
+                    '<td>выезд в порт, погрузка на корабль</td>' +
+                    '<td></td>' +
+                    '<td></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>18:30</td>' +
+                    '<td>отправление в таллинн</td>' +
+                    '<td></td>' +
+                    '<td></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>21:00</td>' +
+                    '<td>ужин на корабле <em>(доп. оплата)</em>.</td>' +
+                    '<td></td>' +
+                    '<td></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td></td>' +
+                    '<td><strong>прибытие в минск в 00:30-02:30м</strong></td>' +
+                    '<td></td>' +
+                    '<td></td>' +
+                    '</tr>' +
+                    '</table>');
             }
         });
 
